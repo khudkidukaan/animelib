@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Library</title>
+</head>
+<body>
+    <h1 style="text-align:center;">Anime Library</h1>
+    <hr>
+    <hr>
+    <p style="font-size:large">Welcome to <code>animelib.com</code>, we work hard day and night to rovide you with
+    all the necessary information about the latest anime series.</p>
+    <hr>
+    <hr>
+    <u><p style="font-size:larger;">Best websites to stream anime(Click to visit)</p></u>
+    <ul style="font-size:larger;display:inline-block;">
+        <li><a href="https://aniwatch.to" style="text-decoration:none;color:#333;" target="_blank">Aniwatch.to</a></li>
+        <li><a href="https://animesuge.to" style="text-decoration:none;color:#333;" target="_blank">Animesuge.to</a></li>
+        <li><a href="https://9anime.to" style="text-decoration:none;color:#333;" target="_blank">9anime.to</a></li>
+        <li><a href="https://crunchyroll.com" style="text-decoration:none;color:#333;" target="_blank">Crunchyroll.com</a></li>
+        <li><a href="https://gogoanime.fi" style="text-decoration:none;color:#333;" target="_blank">Gogoanime.fi</a></li>
+    </ul>
+    <hr>
+    <hr>
+    <form action="/" method="GET">
+        <input style="height:5vh;width:92%;background-color:#333;color:#f1f1f1" type="text" class="searchBox" id="search" placeholder="Search..." required><button style="height:5vh;width:7%;margin-left:5px;" type="submit" class="searchBtn">Search</button>
+    </form>
+    <br>
+    <br>
+    <a style="font-size:larger;text-decoration:none;" href="http://localhost:8080/list_all_anime">Anime list</a><h4 style="text-align:center;">Add Anime</h4>
+    <hr>
+    <hr>
+    <form action="localhost:8080/add_anime" method="POST">
+        <input type="text" style="height:3vh;width:49%" placeholder="NAME"><input type="text" style="height:3vh;width:49%" placeholder="RELEASE DATE(FORMAT:DATE-MONTH-YEAR)">
+        <input type="text" style="height:3vh;width:49%" placeholder="TYPE"><input type="number" style="height:3vh;width:49%" placeholder="NO OF SEASONS">
+        <button type="submit" style="height:3vh;width:50%">SUBMIT</button><button type="reset" style="height:3vh;width:49%">RESET</button>
+    </form>
+</body>
+</html>
